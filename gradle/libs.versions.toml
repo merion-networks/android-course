@@ -39,6 +39,7 @@ room = "2.6.1"
 work = "2.10.0"
 startup = "1.2.0"
 camerax = "1.4.0"
+faker = "1.0.2"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -106,6 +107,7 @@ ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
 ktor-client-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktor" }
 ktor-client-auth = { module = "io.ktor:ktor-client-auth", version.ref = "ktor" }
 ktor-serialization-contentJson = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
+faker = { module = "com.github.javafaker:javafaker", version.ref = "faker" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
