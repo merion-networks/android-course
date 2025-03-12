@@ -27,10 +27,15 @@ android {
     kotlinOptions {
         jvmTarget = "17"
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
     api(libs.kotlinx.datetime)
     implementation(libs.napier)
     implementation(libs.kotlinx.coroutines)
+    implementation(libs.androidx.fragment)
+    implementation(libs.androidx.recyclerview)
 }
