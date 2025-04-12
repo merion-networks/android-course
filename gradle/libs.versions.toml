@@ -51,7 +51,6 @@ crypto = "1.0.0"
 sqlite = "2.4.0"
 okhttp = "5.0.0-alpha.14"
 retrofit = "2.11.0"
-retrofitKotlinSerialization = "1.0.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -138,7 +137,7 @@ okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhtt
 okhttp-logging = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp" }
 okhttp-mockwebserver = { group = "com.squareup.okhttp3", name = "mockwebserver", version.ref = "okhttp" }
 retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
-retrofit-kotlinSerialization = { group = "com.jakewharton.retrofit", name = "retrofit-kotlinx-serialization-converter", version.ref = "retrofitKotlinSerialization" }
+retrofit-kotlinSerialization = { group = "com.squareup.retrofit2", name = "converter-kotlinx-serialization", version.ref = "retrofit" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
