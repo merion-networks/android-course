@@ -37,7 +37,7 @@ logback = "1.5.18"
 datastore = "1.1.7"
 dagger = "2.57"
 hilt = "2.57"
-hiltWork = "1.2.0"
+hiltAndroidx = "1.2.0"
 room = "2.7.2"
 work = "2.10.2"
 startup = "1.2.0"
@@ -119,8 +119,9 @@ dagger = { group = "com.google.dagger", name = "dagger", version.ref = "dagger" 
 hilt-android-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt" }
 hilt-core = { group = "com.google.dagger", name = "hilt-core", version.ref = "hilt" }
 hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
-hilt-androidx = { group = "androidx.hilt", name = "hilt-compiler", version.ref = "hiltWork" }
-hilt-work = { group = "androidx.hilt", name = "hilt-work", version.ref = "hiltWork" }
+hilt-androidx = { group = "androidx.hilt", name = "hilt-compiler", version.ref = "hiltAndroidx" }
+hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hiltAndroidx" }
+hilt-work = { group = "androidx.hilt", name = "hilt-work", version.ref = "hiltAndroidx" }
 commonstatemachine-machine = { module = "com.motorro.commonstatemachine:commonstatemachine", version.ref = "statemachine"}
 commonstatemachine-coroutines = { module = "com.motorro.commonstatemachine:coroutines", version.ref = "statemachine"}
 napier = { module = "io.github.aakira:napier", version = "2.7.1" }
