@@ -26,10 +26,18 @@ fun FatalError(
     retriable: Boolean = false,
     contentPadding: PaddingValues = PaddingValues(0.dp)
 ) {
+    FatalError(errorMessage, onDismiss, Modifier.padding(contentPadding), retriable)
+}
+
+@Composable
+fun FatalError(
+    errorMessage: String?,
+    onDismiss: () -> Unit,
+    modifier: Modifier = Modifier,
+    retriable: Boolean = false
+) {
     Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .padding(contentPadding),
+        modifier = modifier.then(Modifier.fillMaxSize()),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.spacedBy(30.dp, Alignment.CenterVertically)
     ) {

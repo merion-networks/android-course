@@ -16,9 +16,20 @@ import androidx.compose.ui.unit.dp
 import com.motorro.composecore.R
 
 @Composable
-fun Loading(message: String? = null, contentPadding: PaddingValues = PaddingValues(0.dp)) {
+fun Loading(
+    message: String? = null,
+    contentPadding: PaddingValues = PaddingValues(0.dp)
+) {
+    Loading(Modifier.padding(contentPadding), message)
+}
+
+@Composable
+fun Loading(
+    modifier: Modifier = Modifier,
+    message: String? = null
+) {
     Column(
-        modifier = Modifier.fillMaxSize().padding(contentPadding),
+        modifier = modifier.then(Modifier.fillMaxSize()),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
