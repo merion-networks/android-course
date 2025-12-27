@@ -41,12 +41,15 @@ onMaster=(
     "practice/1.Activity"
     "practice/2.Layout"
     "practice/3.Navigation"
-    "practice/3.Navigation-solution"
     "practice/4.Coroutines"
     "practice/5.IO"
 )
 
-onIo=(
+onPracticeNav=(
+    "practice/3.Navigation-solution"
+)
+
+onPracticeCookbook=(
     "practice/5.IO-solution"
     "practice/6.DI"
     "practice/6.DI-solution"
@@ -63,11 +66,20 @@ for b in ${onMaster[@]}; do
     rebaseCheck $b "master"
 done
 
-echo "=================="
-echo "= Rebase project ="
-echo "=================="
+echo "======================="
+echo "= Rebase nav-practice ="
+echo "======================="
+base="practice/3.Navigation"
+for b in ${onPracticeNav[@]}; do
+    rebaseCheck $b "$base"
+    base=$b
+done
+
+echo "============================"
+echo "= Rebase cookbook-practice ="
+echo "============================"
 base="practice/5.IO"
-for b in ${onIo[@]}; do
+for b in ${onPracticeCookbook[@]}; do
     rebaseCheck $b "$base"
     base=$b
 done
